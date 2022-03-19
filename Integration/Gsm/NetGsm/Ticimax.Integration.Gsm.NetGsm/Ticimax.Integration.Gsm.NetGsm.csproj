@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Ticimax.Integration.Gsm\Ticimax.Integration.Gsm.csproj" />
+    <ProjectReference Include="..\Ticimax.Integration.Gsm.NetGsm.Abstractions\Ticimax.Integration.Gsm.NetGsm.Abstractions.csproj" />
+  </ItemGroup>
+
+</Project>
