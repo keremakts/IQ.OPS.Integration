@@ -11,6 +11,7 @@ using Ticimax.Integration.Gsm.RelatedDigital.Sms;
 using Ticimax.Integration.Gsm.SmartMessage.Sms;
 using Ticimax.Integration.Gsm.Sms.Options;
 using Ticimax.Integration.Gsm.Telsam.Sms;
+using Ticimax.Integration.Gsm.TFonTelekom.Sms;
 using Ticimax.Integration.Gsm.Verimor.Sms;
 
 var application = Application.Create<MainModule>();
@@ -31,6 +32,7 @@ Console.ReadKey();
     typeof(RelatedDigitalSmsModule),
     typeof(SmartMessageSmsModule),
     typeof(TelsamSmsModule),
+    typeof(TFonTelekomSmsModule),
     typeof(VerimorSmsModule))]
 public class MainModule : Module
 {
@@ -38,7 +40,7 @@ public class MainModule : Module
     {
         options.Services.Configure<SmsSenderOptions>(opt =>
         {
-            opt.SmsServiceProvider = EnumSmsServiceProvider.RelatedDigital;
+            opt.SmsServiceProvider = EnumSmsServiceProvider.TFonTelekom;
             opt.Originator = nameof(Ticimax);
             opt.SendSmsEndpoint = "http://api2.ekomesaj.com/json/syncreply/SendInstantSms";
             opt.Username = nameof(opt.Username);

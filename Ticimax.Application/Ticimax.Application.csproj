@@ -14,6 +14,7 @@
     <ProjectReference Include="..\Integration\Gsm\RelatedDigital\Ticimax.Integration.Gsm.RelatedDigital\Ticimax.Integration.Gsm.RelatedDigital.csproj" />
     <ProjectReference Include="..\Integration\Gsm\SmartMessage\Ticimax.Integration.Gsm.SmartMessage\Ticimax.Integration.Gsm.SmartMessage.csproj" />
     <ProjectReference Include="..\Integration\Gsm\Telsam\Ticimax.Integration.Gsm.Telsam\Ticimax.Integration.Gsm.Telsam.csproj" />
+    <ProjectReference Include="..\Integration\Gsm\TFonTelekom\Ticimax.Integration.Gsm.TFonTelekom\Ticimax.Integration.Gsm.TFonTelekom.csproj" />
     <ProjectReference Include="..\Integration\Gsm\Verimor\Ticimax.Integration.Gsm.Verimor\Ticimax.Integration.Gsm.Verimor.csproj" />
   </ItemGroup>
 

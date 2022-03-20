@@ -14,5 +14,4 @@ public class SmsSenderOptions : IOptions
     public string? Password { get; set; }
 
     public string? Originator { get; set; }
-
 }

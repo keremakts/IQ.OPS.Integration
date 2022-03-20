@@ -2,6 +2,4 @@
 
 namespace Ticimax.Integration.Gsm;
 
-public class IntegrationGsmModule : Module
-{
-}
+public class IntegrationGsmModule : Module { }
