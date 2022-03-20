@@ -5,8 +5,6 @@ VisualStudioVersion = 17.0.32112.339
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ticimax.Application", "Ticimax.Application\Ticimax.Application.csproj", "{D8D359CC-526A-4C70-9DA7-7FF7E32BF416}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ticimax.Application.Abstarctions", "Ticimax.Application.Abstarctions\Ticimax.Application.Abstarctions.csproj", "{5C7FE5F7-C247-4CBF-9C88-D0412D9D8135}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Integration", "Integration", "{B9A2D461-3345-4004-9208-141BDFEC7076}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GuvenTelekom", "GuvenTelekom", "{0468B695-9EFF-4E3E-875F-1BE3D1F7EDED}"
@@ -69,10 +67,6 @@ Global
 		{D8D359CC-526A-4C70-9DA7-7FF7E32BF416}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D8D359CC-526A-4C70-9DA7-7FF7E32BF416}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D8D359CC-526A-4C70-9DA7-7FF7E32BF416}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5C7FE5F7-C247-4CBF-9C88-D0412D9D8135}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5C7FE5F7-C247-4CBF-9C88-D0412D9D8135}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5C7FE5F7-C247-4CBF-9C88-D0412D9D8135}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5C7FE5F7-C247-4CBF-9C88-D0412D9D8135}.Release|Any CPU.Build.0 = Release|Any CPU
 		{2421CB53-1AAF-4B18-9FBF-A31F0E557481}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{2421CB53-1AAF-4B18-9FBF-A31F0E557481}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2421CB53-1AAF-4B18-9FBF-A31F0E557481}.Release|Any CPU.ActiveCfg = Release|Any CPU
