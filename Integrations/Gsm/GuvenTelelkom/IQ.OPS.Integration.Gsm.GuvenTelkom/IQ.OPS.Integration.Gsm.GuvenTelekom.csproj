@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\IQ.OPS.Integration.Gsm\IQ.OPS.Integration.Gsm.csproj" />
+    <ProjectReference Include="..\IQ.OPS.Gsm.GuvenTelekom.Abstractions\IQ.OPS.Integration.Gsm.GuvenTelekom.Abstractions.csproj" />
+  </ItemGroup>
+</Project>

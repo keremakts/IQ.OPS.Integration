@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <OutputType>Exe</OutputType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Integrations\Gsm\GuvenTelelkom\IQ.OPS.Integration.Gsm.GuvenTelkom\IQ.OPS.Integration.Gsm.GuvenTelekom.csproj" />
+    <ProjectReference Include="..\Integrations\Gsm\NetGsm\IQ.OPS.Integration.Gsm.NetGsm\IQ.OPS.Integration.Gsm.NetGsm.csproj" />
+    <ProjectReference Include="..\Integrations\Gsm\RelatedDigital\IQ.OPS.Integration.Gsm.RelatedDigital\IQ.OPS.Integration.Gsm.RelatedDigital.csproj" />
+    <ProjectReference Include="..\Integrations\Gsm\SmartMessage\IQ.OPS.Integration.Gsm.SmartMessage\IQ.OPS.Integration.Gsm.SmartMessage.csproj" />
+    <ProjectReference Include="..\Integrations\Gsm\Telsam\IQ.OPS.Integration.Gsm.Telsam\IQ.OPS.Integration.Gsm.Telsam.csproj" />
+    <ProjectReference Include="..\Integrations\Gsm\TFonTelekom\IQ.OPS.Integration.Gsm.TFonTelekom\IQ.OPS.Integration.Gsm.TFonTelekom.csproj" />
+    <ProjectReference Include="..\Integrations\Gsm\Verimor\IQ.OPS.Integration.Gsm.Verimor\IQ.OPS.Integration.Gsm.Verimor.csproj" />
+  </ItemGroup>
+
+</Project>
