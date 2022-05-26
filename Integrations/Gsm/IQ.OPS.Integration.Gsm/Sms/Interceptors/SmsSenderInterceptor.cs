@@ -1,4 +1,5 @@
-﻿using IQ.OPS.Core.Abstractions.DynamicProxy;
+﻿using Castle.DynamicProxy;
+using IQ.OPS.Core.Abstractions.DynamicProxy;
 using IQ.OPS.DynamicProxy.Castle.Interception;
 using IQ.OPS.Integration.Gsm.Abstractions.Sms.Contexts;
 using IQ.OPS.Integration.Gsm.Abstractions.Sms.Senders;
@@ -20,7 +21,7 @@ public class SmsSenderInterceptor : Interceptor, IInterceptor<ISmsSender>
         _smsSenderOptions = smsSenderOptions.Value;
     }
 
-    public override Task Intercept(IInvocation invocation)
+    public override Task Intercept(Core.Abstractions.DynamicProxy.IInvocation invocation)
     {
         if (_smsSenderOptions.SmsServiceProvider is null) return Task.CompletedTask;
 
@@ -28,7 +29,13 @@ public class SmsSenderInterceptor : Interceptor, IInterceptor<ISmsSender>
 
         var smsSender = _serviceProvider.GetService(type!) as ISmsSender;
 
-        invocation.Method.Invoke(smsSender, invocation.Arguments);
+        if (ProxyUtil.IsProxy(smsSender))
+            smsSender = ProxyUtil.GetUnproxiedInstance(smsSender) as ISmsSender;
+
+        var value = invocation.Method.Invoke(smsSender, invocation.Arguments);
+
+        if (value is not null)
+            invocation.ReturnValue = value;
 
         return Task.CompletedTask;
     }

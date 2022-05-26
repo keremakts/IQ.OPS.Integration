@@ -42,7 +42,7 @@ public class MainModule : Module
     {
         options.Services.Configure<SmsSenderOptions>(opt =>
         {
-            opt.SmsServiceProvider = EnumSmsServiceProvider.TFonTelekom;
+            opt.SmsServiceProvider = EnumSmsServiceProvider.Telsam;
             opt.Originator = nameof(IQ.OPS);
             opt.SendSmsEndpoint = "http://api2.ekomesaj.com/json/syncreply/SendInstantSms";
             opt.Username = nameof(opt.Username);
